@@ -15,8 +15,15 @@ Visualizing how JavaScript handles asynchronous tasks using the Event Loop
   <p class="flow">
 Call Stack → Web APIs → Callback Queue → Call Stack
 </p>
+
    <button onclick="runExample()" id="nextBtn">RUN CODE ▶</button>
-  <div class="container">
+  
+  <div class="info-panel">
+  <p id="status">🟢 Idle</p>
+  <p id="explain-text">Click Run Code to start visualization</p>
+</div>
+   <div class="container">
+    
     <div class="box" id="callstack">                        
       <h2>Call Stack</h2>
       <h3>(Executes tasks)</h3>

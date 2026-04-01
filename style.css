@@ -78,7 +78,6 @@ button {
 .footer {
   position: fixed;      
   bottom: 0;          
-  
   width: 100%;         
   text-align:left;   
   padding: 10px 0;      
@@ -95,4 +94,55 @@ button {
   box-shadow: 0 0 3px 3px #347236;  
   transform: scale(1.05);         
   transition: all 0.3s ease;    
+}
+#status {
+  margin: 15px 0;
+  padding: 10px 15px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 8px;
+  background-color: #1e1e1e;
+  color: #ffffff;
+  width: fit-content;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}.info-panel {
+  margin: 25px auto;
+  padding: 18px;
+  width: 85%;
+  max-width: 520px;
+  border-radius: 14px;
+
+  background: rgba(255, 255, 255, 0.06);
+  backdrop-filter: blur(12px);
+
+  border: 1px solid rgba(255,255,255,0.15);
+  box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+
+  text-align: left;
+  transition: all 0.3s ease;
+}
+.info-panel:hover {
+  transform: translateY(-3px);
+}
+/* Status */
+#status {
+  font-weight: bold;
+  font-size: 16px;
+  margin-bottom: 8px;
+}
+
+/* Explanation */
+#explain-text {
+  font-size: 14px;
+  color: #cbd5f5;
+  line-height: 1.6;
+  padding: 10px;
+  border-left: 3px solid #60a5fa;
+  background: rgba(255,255,255,0.03);
+  border-radius: 6px;
+
+  /* animation base */
+  opacity: 0;
+  transform: translateY(10px);
+  transition: all 0.3s ease;
 }
