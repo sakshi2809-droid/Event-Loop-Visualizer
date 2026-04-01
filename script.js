@@ -32,7 +32,7 @@ task.innerText = "Task " + taskId;
 task.classList.add("task");
 
      callstack.appendChild(task);
-// Highlight Call Stack
+
 callstack.classList.add("highlight");
 WebAPIs.classList.remove("highlight");
 callbackQueue.classList.remove("highlight");
@@ -41,7 +41,6 @@ callbackQueue.classList.remove("highlight");
       callstack.removeChild(task);
 WebAPIs.appendChild(task);
 
-// Later, highlight Web APIs
 callstack.classList.remove("highlight");
 WebAPIs.classList.add("highlight");
 callbackQueue.classList.remove("highlight");},1000
@@ -50,12 +49,12 @@ callbackQueue.classList.remove("highlight");},1000
        WebAPIs.removeChild(task);
 callbackQueue.appendChild(task);
 
-// Later, highlight Web APIs
 callstack.classList.remove("highlight");
 callbackQueue.classList.add("highlight");
 WebAPIs.classList.remove("highlight");
 },2000
      );
+
       setTimeout(function(){
   callbackQueue.removeChild(task);
   callstack.appendChild(task);
@@ -63,9 +62,8 @@ WebAPIs.classList.remove("highlight");
   callstack.classList.add("highlight");
 WebAPIs.classList.remove("highlight");
 callbackQueue.classList.remove("highlight");
-
-  
 },3000);
+
 setTimeout(function(){
 callstack.removeChild(task); 
 callstack.classList.remove("highlight");
@@ -80,46 +78,9 @@ if(queue.length>0){
   }
   
 },4000);
-
 }
-    
-     
-     /*callbackQueue.appendChild(task);
-    
-     setTimeout(function(){
-      callbackQueue.removeChild(task);
-    callstack.appendChild(task);
-    
-     
-     setTimeout(function(){
-       callstack.removeChild(task);
-       
-       
-       isrunning = false;
-     
-    }, 1000);
-  }, 1000);*/
-    
-  /*callstack.appendChild(task)
-
-     setTimeout(function(){
-      callstack.removeChild(task)
-WebAPIs.appendChild(task)},1000
-     )
-     setTimeout(function(){
-       WebAPIs.removeChild(task)
-callbackQueue.appendChild(task)},2000
-     )
-     setTimeout(function(){
-       callbackQueue.removeChild(task)
-callstack.appendChild(task)
- isrunning = false;},3000
-
-     )*/ 
-
      
 function processQueue(){
-
 if(isRunning) {
   return;}
   if(queue.length === 0){
@@ -128,8 +89,5 @@ if(isRunning) {
   }
    isRunning=true;
   const currentTask = queue.shift()
- 
-  
   currentTask();
-  
 }
