@@ -34,7 +34,7 @@ A fully interactive demonstration of JavaScript's Event Loop, showing how tasks 
 ---
 
 🔹 Live Demo
-[View Live Event Loop Visualizer](https://YOUR_USERNAME.github.io/event-loop-visualizer/)
+[View Live Event Loop Visualizer (https://sakshi2809-droid.github.io/Event-Loop-Visualizer/)]
 
 ---
 
