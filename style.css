@@ -67,7 +67,7 @@ button:hover {
   text-align: left;
   transition: all 0.3s ease;
 }
-  #status {
+#status {
   margin: 2px 0;
   padding: 10px 15px;
   font-size: 16px;
@@ -103,7 +103,7 @@ button:hover {
   background: rgba(255, 255, 255, 0.05);
   border-radius: 16px;
   padding: 20px;
-  margin: 20px;
+  margin: 16px;
   backdrop-filter: blur(10px);
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
   transition: transform 0.3s ease;
@@ -114,7 +114,7 @@ button:hover {
 .box.highlight{
   border: 2px solid #38bdf8;
   box-shadow: 0 0 25px rgba(56, 189, 248, 0.5);
-  transform: scale(1.05);
+  transition: filter 0.3s ease, border 0.3s ease
 }
 
 .flex {
@@ -128,7 +128,7 @@ button:hover {
 .task {
   background:#38bdf8;
   color: #0f172a;
-  padding: 8px 12px;
+  padding: 10px 12px;
   border-radius: 6px;
   margin: 6px 0;
   font-weight: bold;
